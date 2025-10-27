@@ -47,5 +47,6 @@ Copy the produced model artifact into the same directory as `app.py`.
 streamlit run app.py
 ```
 
-Open the URL that Streamlit : 
+Open the URL that Streamlit : https://mkpr26-fashionimageclassificationusingcnns.streamlit.app/
+
 
