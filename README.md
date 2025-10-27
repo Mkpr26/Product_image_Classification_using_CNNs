@@ -2,6 +2,8 @@
 
 This repository contains a minimal Streamlit application that serves a **CNN image classifier** trained on the Fashion-MNIST dataset.
 
+Open the URL that Streamlit : https://mkpr26-fashionimageclassificationusingcnns.streamlit.app/
+
 ## Project layout
 
 ```
@@ -47,6 +49,6 @@ Copy the produced model artifact into the same directory as `app.py`.
 streamlit run app.py
 ```
 
-Open the URL that Streamlit : https://mkpr26-fashionimageclassificationusingcnns.streamlit.app/
+
 
 
