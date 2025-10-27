@@ -1,0 +1,7 @@
+pandas 
+ipykernel
+scikit-learn
+streamlit>=1.36
+tensorflow>=2.12
+pillow>=9.5
+numpy>=1.24
