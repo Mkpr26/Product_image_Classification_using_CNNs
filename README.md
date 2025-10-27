@@ -1,54 +1,44 @@
-# Fashion-MNIST Streamlit App
+# 👗 Fashion-MNIST Clothing Classification App
 
-This repository contains a minimal Streamlit application that serves a **CNN image classifier** trained on the Fashion-MNIST dataset.
+A deployed Streamlit web application that predicts **clothing categories** using a CNN trained on **Fashion-MNIST** dataset.
 
-Open the URL that Streamlit : https://mkpr26-fashionimageclassificationusingcnns.streamlit.app/
+🔗 **Live Demo App**  
+https://mkpr26-fashionimageclassificationusingcnns.streamlit.app/
 
-## Project layout
+## 📊 Dataset Information (Fashion-MNIST — Kaggle)
 
-```
-.
-├── app.py                     # Streamlit UI for inference
-├── cnn_fashion_mnist.h5       # Your saved Keras model (provide this file)
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
-```
+This project uses the popular **Fashion-MNIST dataset** created by Zalando Research.
 
-> Your training is in `Experiments.ipynb`, which fits a `cnn_model` on Fashion-MNIST CSVs. 
-> Export that trained model as described below and place it alongside `app.py`.
+- **70,000 grayscale images** (28×28 pixels)
+- **10 categories**:
+  1. T-shirt/top  
+  2. Trouser  
+  3. Pullover  
+  4. Dress  
+  5. Coat  
+  6. Sandal  
+  7. Shirt  
+  8. Sneaker  
+  9. Bag  
+  10. Ankle Boot  
 
-## 1) Environment setup
+📂 Dataset Source:  
 
-Use Python 3.10 or 3.11.
+https://www.kaggle.com/zalando-research/fashionmnist  
 
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
+This dataset replaces classic MNIST to benchmark computer vision models in real-world fashion contexts.
 
-## 2) Save the trained model from your notebook
+## 🚀 Project Structure
 
-In your `Experiments.ipynb`, after training the CNN, run:
+├── app.py # Streamlit UI for real-time inference
 
-```python
-# After cnn_model.fit(...)
-cnn_model.save("cnn_fashion_mnist.h5")  # single-file Keras model
-# cnn_model.save("cnn_fashion_mnist", save_format="tf")
-```
+├── cnn_fashion_mnist/ # Exported trained CNN model (SavedModel format)
 
-This creates either:
-- `cnn_fashion_mnist.h5` (single file), or
-- `cnn_fashion_mnist/` directory (TensorFlow SavedModel).
+├── requirements.txt 
 
-Copy the produced model artifact into the same directory as `app.py`.
-
-## 3) Launch the app
-
-```bash
-streamlit run app.py
-```
+└── README.md # Documentation
 
 
+✅ Supports both local execution and Streamlit Cloud deployment
 
 
