@@ -32,7 +32,6 @@ In your `Experiments.ipynb`, after training the CNN, run:
 ```python
 # After cnn_model.fit(...)
 cnn_model.save("cnn_fashion_mnist.h5")  # single-file Keras model
-# Alternatively, SavedModel directory:
 # cnn_model.save("cnn_fashion_mnist", save_format="tf")
 ```
 
@@ -48,4 +47,5 @@ Copy the produced model artifact into the same directory as `app.py`.
 streamlit run app.py
 ```
 
-Then open the URL that Streamlit prints in the terminal.
+Open the URL that Streamlit : 
+
